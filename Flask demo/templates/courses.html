@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+</head>
+<body>
+  {% if (courses)%}
+    <h2>The available courses are:</h2>
+         {% for course in courses%}
+                <div>{{course}}</div>
+         {% endfor%}
+  {% else%}
+    <h2>No courses found</h2>
+  {% endif%}
+</body>
+</html>
