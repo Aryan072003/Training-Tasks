@@ -1,0 +1,155 @@
+{
+      "doctor": {
+            "schema": {
+                  "id": {
+                        "datatype": "integer"
+                  },
+                  "doc_name": {
+                        "datatype": "string"
+                  },
+                  "degree": {
+                        "datatype": "string"
+                  }
+            },
+            "data": [
+                  {
+                        "id": 21,
+                        "doc_name": "Aryan",
+                        "degree": "MBBS"
+                  },
+                  {
+                        "id": 22,
+                        "doc_name": "Jeet",
+                        "degree": "MBBS"
+                  },
+                  {
+                        "id": 23,
+                        "doc_name": "Rohan",
+                        "degree": "MD"
+                  },
+                  {
+                        "id": 24,
+                        "doc_name": "Vedant",
+                        "degree": "MBBS"
+                  },
+                  {
+                        "id": 28,
+                        "doc_name": "Hardik",
+                        "degree": "MBBS"
+                  }
+            ]
+      },
+      "patient": {
+            "schema": {
+                  "id": {
+                        "datatype": "integer"
+                  },
+                  "patient_name": {
+                        "datatype": "string"
+                  },
+                  "age": {
+                        "datatype": "integer"
+                  },
+                  "disease": {
+                        "datatype": "string"
+                  }
+            },
+            "data": [
+                  {
+                        "id": 22,
+                        "patient_name": "Jay",
+                        "age": 19,
+                        "disease": "Fever"
+                  },
+                  {
+                        "id": 23,
+                        "patient_name": "Raj",
+                        "age": 20,
+                        "disease": "Malaria"
+                  },
+                  {
+                        "id": 24,
+                        "patient_name": "Jenil",
+                        "age": 21,
+                        "disease": "Dengue"
+                  },
+                  {
+                        "id": 26,
+                        "patient_name": "Sahil",
+                        "age": 22,
+                        "disease": "Pneumonia"
+                  },
+                  {
+                        "id": 30,
+                        "patient_name": "Kaushik",
+                        "age": 22,
+                        "disease": "Polio"
+                  }
+            ]
+      },
+      "appointment": {
+            "schema": {
+                  "date": {
+                        "datatype": "string"
+                  },
+                  "doc_name": {
+                        "datatype": "string"
+                  },
+                  "doc_id": {
+                        "datatype": "relation",
+                        "table": "doctor"
+                  },
+                  "patient_id": {
+                        "datatype": "relation",
+                        "table": "patient"
+                  },
+                  "patient_name": {
+                        "datatype": "string"
+                  }
+            },
+            "data": [
+                  {
+                        "date": "10-11-25",
+                        "doc_name": "Aryan",
+                        "doc_id": 21,
+                        "patient_id": 22,
+                        "patient_name": "Jay"
+                  },
+                  {
+                        "date": "12-01-25",
+                        "doc_name": "Jeet",
+                        "doc_id": 22,
+                        "patient_id": 23,
+                        "patient_name": "Raj"
+                  },
+                  {
+                        "date": "13-01-25",
+                        "doc_name": "Rohan",
+                        "doc_id": 23,
+                        "patient_id": 24,
+                        "patient_name": "Jenil"
+                  },
+                  {
+                        "date": "11-01-25",
+                        "doc_name": "Vedant",
+                        "doc_id": 25,
+                        "patient_id": 26,
+                        "patient_name": "Sahil"
+                  },
+                  {
+                        "date": "15-01-25",
+                        "doc_name": "Rohan",
+                        "doc_id": 23,
+                        "patient_id": 22,
+                        "patient_name": "Jay"
+                  },
+                  {
+                        "date": "16-01-25",
+                        "doc_name": "Hardik",
+                        "doc_id": 28,
+                        "patient_id": 30,
+                        "patient_name": "Kaushik"
+                  }
+            ]
+      }
+}
