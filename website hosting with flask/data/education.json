@@ -1,0 +1,23 @@
+[
+    {
+        "years": "2008-2010",
+        "degree": "Master of computer engineering",
+        "university": "\nuniversity of north carolina\n",
+        "address": "North Carolina, USA",
+        "description": "Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident."
+    },
+     {
+        "years": "2004-2008",
+        "degree": "Bachelor of computer engineering",
+        "university": "\nuniversity of north carolina\n",
+        "address": "North Carolina, USA",
+        "description": "Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident."
+    },
+     {
+        "years": "2004-2008",
+        "degree": "Bachelor of creative design",
+        "university": "\nuniversity of bolton\n",
+        "address": "Bolton, UK",
+        "description": "Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident."
+    }
+]

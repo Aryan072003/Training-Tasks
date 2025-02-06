@@ -1,0 +1,34 @@
+[
+    {
+        "skill": "adobe photoshop",
+        "knowledge": "90%"
+    },
+    {
+        "skill": "adobe illustrator",
+        "knowledge": "85%"
+    },
+    {
+        "skill": "adobe after effects",
+        "knowledge": "97%"
+    },
+    {
+        "skill": "sketch",
+        "knowledge": "90%"
+    },
+    {
+        "skill": "html5",
+        "knowledge": "90%"
+    },
+    {
+        "skill": "css3 animation",
+        "knowledge": "85%"
+    },
+    {
+        "skill": "coomunication",
+        "knowledge": "97%"
+    },
+    {
+        "skill": "creativity",
+        "knowledge": "90%"
+    }
+]
