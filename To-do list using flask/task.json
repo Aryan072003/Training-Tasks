@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "task": "Study",
+        "checked": false
+    },
+    {
+        "id": 2,
+        "task": "Go to College",
+        "checked": false
+    },
+    {
+        "id": 3,
+        "task": "Complete project",
+        "checked": false
+    },
+    {
+        "id": 4,
+        "task": "Complete Assignments",
+        "checked": false
+    }
+]

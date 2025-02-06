@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <form style="margin: 23px" method="POST" action="/add">
+        <label style="font-size: 25px" for="task">Task: </label>
+        <input style="padding:5px 20px" type="text" id="task" name="task" placeholder="Enter your task"><br><br>
+
+        <button
+                style="padding: 10px 25px; background-color: red; color: white; border-radius: 7px; cursor: pointer; border: none">Add Task</button> <br>
+        <div class="display">
+            {% if (todo)%}
+            <h2>The tasks are:</h2>
+            {% for task in todo%}
+                <div style="margin: 20px">
+                    {{task.task}}
+                    <form action="/complete/{{task.id}}" method="POST" style="display: inline;">
+                        <input type="checkbox"
+                               name="checked"
+                               onclick="this.form.submit()"
+                               checked>
+                    </form>
+
+                </div>
+            {% endfor%}
+        {% else%}
+            <h2>No tasks to do</h2>
+        {% endif%}
+        </div>
+    </form>
+</body>
+</html>
