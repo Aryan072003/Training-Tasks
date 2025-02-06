@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <style>
+            .btn {
+                margin-top: 20px;
+                margin-left: 20px;
+                padding: 10px 20px;
+                background-color: red;
+                color: white;
+                border: none;
+                border-radius: 7px;
+                font-size: 20px;
+            }
+            .btn:hover{
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: white;
+                color: red;
+                cursor: pointer;
+                border: 2px solid red;
+                font-size: 20px;
+            }
+            .todo{
+                padding: 10px 20px;
+                border-radius: 7px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form style="margin: 23px" method="POST">
+            {% csrf_token %}
+            <label style="font-size: 20px" for="task">Task: </label>
+            <input class="todo" id="task" type="text" name="task" placeholder="Enter a task">
+            <button type="submit" class="btn">Add a Task</button>
+            <div style="margin-top: 50px">
+                {% for task in tasks %}
+                <p style="margin-top: 20px">
+                    {{task.title}}
+                </p>
+            {% endfor %}
+            </div>
+        </form>
+    </body>
+</html>
