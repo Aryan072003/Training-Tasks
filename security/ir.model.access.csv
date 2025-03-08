@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cafe_customer,cafe.customer,model_cafe_customer,,1,1,1,1
+access_cafe_order,cafe.order,model_cafe_order,,1,1,1,1
+access_cafe_order_line,cafe.order.line,model_cafe_order_line,,1,1,1,1

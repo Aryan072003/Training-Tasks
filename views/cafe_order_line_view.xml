@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="cafe_view_order_line_tree" model="ir.ui.view">
+        <field name="name">cafe.order.line.list</field>
+        <field name="model">cafe.order.line</field>
+        <field name="arch" type="xml">
+            <list string="Cafe Order Lines">
+                <field name="product_id"/>
+                <field name="quantity"/>
+                <field name="tax"/>
+                <field name="total"/>
+            </list>
+        </field>
+    </record>
+</odoo>
