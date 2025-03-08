@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_estate_offer_list" model="ir.ui.view">
+        <field name="name">offer.line.list</field>
+        <field name="model">offer.line</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="price"/>
+                <field name="partner"/>
+                <field name="validity"/>
+                <field name="deadline"/>
+                <button name="accept_offer" type="object" string="✓"/>
+                <button name="refuse_offer" type="object" string="✗"/>
+                <field name="status"/>
+            </list>
+        </field>
+    </record>
+</odoo>
